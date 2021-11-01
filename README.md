@@ -4,9 +4,9 @@ This is the [PyTorch](https://pytorch.org/) implementation of the paper ["A Deep
 
 Please download the dataset at my Google Drive.
 
-**Image** | ![GitHub Logo](/examples/200000_S29.png) | ![GitHub Logo](/examples/200001_V13.png) | ![GitHub Logo](/examples/200003_G43.png) 
+**Image** | ![GitHub Logo](/examples/D21.png) | ![GitHub Logo](/examples/E34.png) | ![GitHub Logo](/examples/V31.png) 
 ------------ | ------------ | ------------- | -------------
-**Gardener Label** | S29 | V13 | G43
+**Gardener Label** | D21 | E34 | V31
 
 TODO:
 1. Implementation for Glyphnet
