@@ -1,4 +1,4 @@
-# Egyptian Hieroglyph Recognition using ConvNet
+# Egyptian Hieroglyph Classification using ConvNet
 
 This is the [PyTorch](https://pytorch.org/) implementation of the paper ["A Deep Learning Approach to Ancient Egyptian Hieroglyphs Classification" by Barucci et al](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9528382&tag=1).
 
