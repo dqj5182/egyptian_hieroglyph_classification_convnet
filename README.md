@@ -4,3 +4,7 @@ This is the [PyTorch](https://pytorch.org/) implementation of the paper ["A Deep
 
 Please download the dataset at My Google Drive.
 
+TODO:
+1. Implementation for Glyphnet
+2. Implementation for Inception-v3
+3. Implementation for Xception
