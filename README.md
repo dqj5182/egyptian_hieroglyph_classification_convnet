@@ -9,7 +9,7 @@ Please download the dataset at my Google Drive.
 **Gardener Label** | D21 | E34 | V31
 
 Prior implementations:
-1. [GlyphReader by Morris Franken](https://github.com/morrisfranken/glyphreader)
+1. [GlyphReader by Morris Franken](https://github.com/morrisfranken/glyphreader) which extracts features using Inception-v3 and classify using SVM.
 
 TODO:
 1. Implementation for Glyphnet
