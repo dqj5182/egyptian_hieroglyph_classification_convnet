@@ -4,7 +4,7 @@ This is the [PyTorch](https://pytorch.org/) implementation of the paper ["A Deep
 
 Please download the dataset at my Google Drive.
 
-**Image** | ![alt text](/examples/D21.png) | ![alt text](/examples/E34.png) | ![alt text](/examples/V31.png) 
+**Image** | ![alt text](/example/D21.png) | ![alt text](/example/E34.png) | ![alt text](/example/V31.png) 
 ------------ | ------------ | ------------- | -------------
 **Gardener Label** | D21 | E34 | V31
 
