@@ -8,6 +8,9 @@ Please download the dataset at my Google Drive.
 ------------ | ------------ | ------------- | -------------
 **Gardener Label** | D21 | E34 | V31
 
+Prior implementations:
+1. [GlyphReader by Morris Franken](https://github.com/morrisfranken/glyphreader)
+
 TODO:
 1. Implementation for Glyphnet
 2. Implementation for Inception-v3
