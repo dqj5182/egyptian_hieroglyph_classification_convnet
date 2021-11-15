@@ -10,7 +10,7 @@ Please download the dataset "EgyptianHieroglyphDataset_Original" at my [Google D
 
 Steps for running <b>full Python code</b>:
 1. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive
-2. Download src directory in this repo
+2. Download "src" folder in this repo
 3. Install all the requirements for Python packages
 4. Run main.py
 5. The training will start right away!
