@@ -8,6 +8,12 @@ Please download the dataset "EgyptianHieroglyphDataset_Original" at my [Google D
 ------------ | ------------ | ------------- | -------------
 **Gardener Label** | D21 | E34 | V31
 
+Steps
+1. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive
+2. Install all the requirements for Python packages
+3. Run main.py
+4. The training will be starting right away!
+
 Prior implementations:
 1. [GlyphReader by Morris Franken](https://github.com/morrisfranken/glyphreader) which extracts features using Inception-v3 and classifies hieroglyphs using SVM.
 
