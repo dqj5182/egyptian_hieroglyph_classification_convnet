@@ -14,6 +14,9 @@ if not train_on_gpu:
 else:
     print('CUDA is available!  Training on GPU ...')
 
+    
+
+##################################################Data Organization#####################################################
 from pathlib import Path
 downloads_path = str(Path.home() / "Downloads")
 
@@ -33,7 +36,6 @@ classes.sort()
 
 print("Our classes:", classes)
 print(len(classes))
-
 
 data_transform = transforms.Compose([transforms.ToTensor(),
                                           transforms.RandomApply([transforms.RandomHorizontalFlip()]),
@@ -62,25 +64,18 @@ train_loader = torch.utils.data.DataLoader(train_data, batch_size=batch_size,
 test_loader = torch.utils.data.DataLoader(test_data, batch_size=batch_size,
                                           num_workers=num_workers, shuffle=True)
 
-# obtain one batch of training images
-dataiter = iter(train_loader)
-images, labels = dataiter.next()
-images = images.numpy() # convert images to numpy for display
+########################################################################################################################
 
+##################################################ResNet Model##########################################################
 feature_extract = False
 
 # Load the pretrained model from pytorch
 resnet50 = models.resnet50(pretrained=True)
 
-# print out the model structure
-print(resnet50)
-
 import torch.nn as nn
 
 n_inputs = resnet50.fc.in_features
 
-# add last linear layer (n_inputs -> 5 flower classes)
-# new layers automatically have requires_grad = True
 last_layer = nn.Sequential(
                 nn.Linear(n_inputs, len(classes)))
 
@@ -101,7 +96,9 @@ optimizer = optim.Adam(resnet50.parameters(), lr=0.001)
 
 decayRate = 0.999
 my_lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer=optimizer, gamma=decayRate)
+########################################################################################################################
 
+##################################################Training##############################################################
 # number of epochs to train the model
 n_epochs = 300 # Use epoch of 300 if you want to get accuracy above 95%
 
@@ -137,7 +134,9 @@ for epoch in range(1, n_epochs + 1):
             print('Epoch %d, Batch %d loss: %.16f' %
                   (epoch, batch_i + 1, train_loss / 20))
             train_loss = 0.0
+########################################################################################################################
 
+###################################################Testing##############################################################            
 # track test loss
 test_loss = 0.0
 class_correct = list(0. for i in range(len(classes)))
@@ -182,18 +181,4 @@ for i in range(len(classes)):
 print('\nTest Accuracy (Overall): %2d%% (%2d/%2d)' % (
     100. * np.sum(class_correct) / np.sum(class_total),
     np.sum(class_correct), np.sum(class_total)))
-
-# obtain one batch of test images
-dataiter = iter(test_loader)
-images, labels = dataiter.next()
-images.numpy()
-
-# move model inputs to cuda, if GPU available
-if train_on_gpu:
-    images = images.cuda()
-
-# get sample outputs
-output = resnet50(images)
-# convert output probabilities to predicted class
-_, preds_tensor = torch.max(output, 1)
-preds = np.squeeze(preds_tensor.numpy()) if not train_on_gpu else np.squeeze(preds_tensor.cpu().numpy())
+########################################################################################################################
