@@ -8,7 +8,7 @@ Please download the dataset "EgyptianHieroglyphDataset_Original" at my [Google D
 ------------ | ------------ | ------------- | -------------
 **Gardener Label** | D21 | E34 | V31
 
-Steps
+Steps:
 1. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive
 2. Install all the requirements for Python packages
 3. Run main.py
