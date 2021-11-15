@@ -8,14 +8,14 @@ Please download the dataset "EgyptianHieroglyphDataset_Original" at my [Google D
 ------------ | ------------ | ------------- | -------------
 **Gardener Label** | D21 | E34 | V31
 
-Steps for running full Python code:
+Steps for running <b>full Python code</b>:
 1. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive
 2. Download src directory in this repo
 3. Install all the requirements for Python packages
 4. Run main.py
 5. The training will start right away!
 
-Steps for running Jupyter Notebook:
+Steps for running <b>Jupyter Notebook</b>:
 1. Click Egyptian_model_with_ResNet.ipynb in my repo
 2. Click "Open in Colab"
 3. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive and store it into your Google Drive
