@@ -46,8 +46,6 @@ data_transform = transforms.Compose([transforms.ToTensor(),
 train_data = datasets.ImageFolder(train_dir, transform=data_transform)
 test_data = datasets.ImageFolder(test_dir, transform=data_transform)
 
-more_data = datasets.ImageFolder(train_dir, transform=data_transform)
-
 # print out some data stats
 print('Num training images: ', len(train_data))
 print('Num test images: ', len(test_data))
