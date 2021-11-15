@@ -14,7 +14,6 @@ if not train_on_gpu:
 else:
     print('CUDA is available!  Training on GPU ...')
 
-    
 
 ##################################################Data Organization#####################################################
 from pathlib import Path
@@ -63,7 +62,6 @@ train_loader = torch.utils.data.DataLoader(train_data, batch_size=batch_size,
                                            num_workers=num_workers, shuffle=True)
 test_loader = torch.utils.data.DataLoader(test_data, batch_size=batch_size,
                                           num_workers=num_workers, shuffle=True)
-
 ########################################################################################################################
 
 ##################################################ResNet Model##########################################################
