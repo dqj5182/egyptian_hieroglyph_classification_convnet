@@ -1,6 +1,7 @@
 import os, os.path
 import numpy as np
 import torch
+import torch.nn as nn
 
 import torchvision
 from torchvision import datasets, models, transforms
@@ -66,8 +67,6 @@ feature_extract = False
 
 # Load the pretrained model from pytorch
 resnet50 = models.resnet50(pretrained=True)
-
-import torch.nn as nn
 
 n_inputs = resnet50.fc.in_features
 
