@@ -8,12 +8,19 @@ Please download the dataset "EgyptianHieroglyphDataset_Original" at my [Google D
 ------------ | ------------ | ------------- | -------------
 **Gardener Label** | D21 | E34 | V31
 
-Steps:
+Steps for running full Python code:
 1. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive
 2. Download src directory in this repo
 3. Install all the requirements for Python packages
 4. Run main.py
-5. The training will be starting right away!
+5. The training will start right away!
+
+Steps for running Jupyter Notebook:
+1. Click Egyptian_model_with_ResNet.ipynb in my repo
+2. Click "Open in Colab"
+3. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive and store it into your Google Drive
+4. Connect the Google Colab with your Google Drive and run the codes
+5. The training will start right away!
 
 Prior implementations:
 1. [GlyphReader by Morris Franken](https://github.com/morrisfranken/glyphreader) which extracts features using Inception-v3 and classifies hieroglyphs using SVM.
