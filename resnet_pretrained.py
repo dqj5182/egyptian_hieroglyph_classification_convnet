@@ -14,7 +14,6 @@ if not train_on_gpu:
 else:
     print('CUDA is available!  Training on GPU ...')
 
-
 ##################################################Data Organization#####################################################
 from pathlib import Path
 downloads_path = str(Path.home() / "Downloads")
