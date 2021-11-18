@@ -15,12 +15,15 @@ Steps for running <b>full Python code</b>:
 4. Run main.py
 5. The training will start right away!
 
-Steps for running <b>Jupyter Notebook</b> (Accuracy rate of 98.6%):
+Steps for running <b>Jupyter Notebook</b>:
 1. Click Egyptian_model_with_ResNet_Modular.ipynb in my repo
 2. Click "Open in Colab"
 3. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive and store it into your Google Drive
 4. Connect the Google Colab with your Google Drive and run the codes
 5. The training will start right away!
+
+Performance (Accuracy):
+1. ResNet-50: 98.6%
 
 Prior implementations:
 1. [GlyphReader by Morris Franken](https://github.com/morrisfranken/glyphreader) which extracts features using Inception-v3 and classifies hieroglyphs using SVM.
