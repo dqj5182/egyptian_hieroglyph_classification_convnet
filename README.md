@@ -22,7 +22,7 @@ Steps for running <b>Jupyter Notebook</b>:
 4. Connect the Google Colab with your Google Drive and run the codes
 5. The training will start right away!
 
-Performance (Accuracy):
+Performance (Accuracy on 40 classes):
 1. ResNet-50: 98.6%
 
 Prior implementations:
