@@ -15,7 +15,7 @@ Steps for running <b>full Python code</b>:
 4. Run main.py
 5. The training will start right away!
 
-Steps for running <b>Jupyter Notebook</b>:
+Steps for running <b>Jupyter Notebook</b> (Accuracy rate of 98.6%:
 1. Click Egyptian_model_with_ResNet_Modular.ipynb in my repo
 2. Click "Open in Colab"
 3. Download "EgyptianHieroglyphDataset_Original" dataset from my Google Drive and store it into your Google Drive
